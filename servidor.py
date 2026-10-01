@@ -133,4 +133,4 @@ class MiServidor(BaseHTTPRequestHandler):
 servidor = HTTPServer(("localhost", 8000), MiServidor)
 print("Servidor corriendo en http://localhost:8000")
 servidor.serve_forever()
-#TODO: nueva funcionalidad en progreso, aun no funciona
+print("Bienvenidos al server de usuarios")

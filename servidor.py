@@ -2,7 +2,7 @@ import json  #YEISON
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 usuarios = []
-
+print("Bienvenidos al servidor")
 class MiServidor(BaseHTTPRequestHandler):
 
     def do_GET(self):
@@ -133,4 +133,3 @@ class MiServidor(BaseHTTPRequestHandler):
 servidor = HTTPServer(("localhost", 8000), MiServidor)
 print("Servidor corriendo en http://localhost:8000")
 servidor.serve_forever()
-print("Bienvenidos al server de usuarios")
